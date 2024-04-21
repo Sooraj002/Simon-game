@@ -1,49 +1,76 @@
 body {
-    text-align: center;
-    transition: 0.2s;
+  text-align: center;
+  transition: 0.2s;
 }
 
-
-
 .btn {
-    height: 200px;
-    width: 200px;
-    border-radius: 20%;
-    border: 20px solid black ;
-    margin: 2rem;
-    transition: 0.5s;
+  height: 200px;
+  width: 200px;
+  border-radius: 15%;
+  border: 10px solid black;
+  margin: 2rem;
+  transition: 0.5s;
+}
+
+.p-btn-mobile {
+  padding: 0.3rem;
+  margin-top: 0.7rem;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 3rem; 
+  text-align: center; 
+  border-radius: 0.3rem;
 }
 
 .outer {
-    display: flex;
-    justify-content: center;
-   
+  display: flex;
+  justify-content: center;
 }
 
 .b1 {
-    background-color:#d95980 ;
+  background-color: #d95980;
 }
 
 .b2 {
-    background-color: #f99b45;
+  background-color: #f99b45;
 }
 
 .b3 {
-    background-color: #63aac0;
+  background-color: #63aac0;
 }
 
 .b4 {
-    background-color: #819ff9;
+  background-color: #819ff9;
 }
 
 .flash {
-    background-color: white;
+  background-color: white;
 }
 
 .userflash {
-    background-color: green;
+  background-color: green;
 }
 
-.red{
-    background-color: red;
+.red {
+  background-color: red;
+}
+
+@media (max-width: 1000px) {
+body{
+    margin-top: 5rem;
+}
+
+  .btn {
+    padding: 1rem;
+    width: 50px; /* Adjust button size for better mobile experience */
+    height: 50px;
+    margin: 1rem;
+  }
+
+  .outer{
+    margin: 3rem 0rem;
+  }
 }
